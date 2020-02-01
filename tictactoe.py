@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 import sys
 import math
+import keep_alive
 
 client = discord.Client()
 @client.event #event decorator/wrapper
@@ -87,7 +88,8 @@ async def on_message(message):
         await message.channel.send(output)
     if "!gcreator" in message.content.lower():
         await message.channel.send("My amazing creator is Yassine Seddaoui Aka Cursedbuddy ||:sunglasses:||")
-client.run("NjY3ODc4OTMzMTg1ODIyNzIx.XiJJBg.1_CUaekoQBhqW3eRB0UQ4oRBWhc")
+keep_alive.keep_alive()
+client.run("NjY3ODc4OTMzMTg1ODIyNzIx.XjTXWw.w7BRCoivonPd9n5277CMKwdAz2I")
 #1 = rock
 #2 = paper 
 #3 = scissors
